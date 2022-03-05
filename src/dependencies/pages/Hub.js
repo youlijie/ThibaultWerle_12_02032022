@@ -3,7 +3,7 @@ import { apiCall, newUserData } from '../../api-call/apiCall';
 import RadialProgress from '../components/RadialProgress';
 
 const Hub = () => {
-    const [datas, setDatas] = useState([]);
+    const [datas, setDatas] = useState({});
     const [userid, setUserid] = useState('12');
 
     useEffect(() => {
@@ -13,6 +13,7 @@ const Hub = () => {
             console.log(newUserData, 'userData2');
         }
         fetchData();
+        
     }, [userid]);
 
     return (
