@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { apiCall, newUserData } from '../../api-call/apiCall';
+import BarChartBody from '../components/BarChartBody';
 import LineChartTime from '../components/LineChartTime';
 import RadarChartPerf from '../components/RadarChartPerf';
 import RadialProgress from '../components/RadialProgress';
@@ -20,6 +21,7 @@ const Hub = () => {
 
     return (
         <div>
+            <BarChartBody datas={datas} />
             <LineChartTime datas={datas} />
             <RadarChartPerf datas={datas} />
             <RadialProgress datas={datas} />

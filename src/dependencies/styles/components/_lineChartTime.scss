@@ -1,0 +1,36 @@
+.linechartcontainer {
+    position: relative;
+    background-image: linear-gradient(0deg, #ff0000 0 100%, #e60000 100% 100%);
+    border-radius: 5px;
+    height: 263px;
+    width: 258px;
+    display: flex;
+    align-items: flex-end;
+
+    h2 {
+        position: absolute;
+    left: 13.18%;
+    right: 29.46%;
+    top: 6.03%;
+    bottom: 67.3%;height: 48px;
+    width: 147px;
+    font-weight: 500;
+    font-size: 0.93rem;
+    line-height: 200%;
+    opacity: 0.5;
+    color: white;
+    }
+
+    .custom-tooltip {
+        background: #fff;
+        color: #000;
+        font-size: 12px;
+        font-weight: 500;
+        font-family: Roboto;
+        text-align: center;
+        padding: 1px 4px;
+    }
+
+    
+}
+

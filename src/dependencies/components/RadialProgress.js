@@ -9,8 +9,7 @@ const RadialProgress = ({ datas }) => {
     if (datas.user?.todayScore) {
       setTodayScore(datas.user?.todayScore * 100);
     }
-    console.log(todayScore, "todayScore");
-  }, [datas, todayScore]);
+  }, [datas]);
   
 
   return (

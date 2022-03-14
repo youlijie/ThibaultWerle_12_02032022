@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import {
   PolarAngleAxis,
   PolarGrid,
-  PolarRadiusAxis,
   Radar,
   RadarChart,
 } from "recharts";
@@ -27,7 +26,6 @@ const RadarChartPerf = ({ datas }) => {
       kind: kinds[item.kind - 1],
     };
   });
-  console.log(data, "data");
 
   return (
     <div>
