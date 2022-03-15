@@ -9,6 +9,12 @@ import {
   Tooltip,
 } from "recharts";
 
+/**
+ * 
+ * @param {*} param0 
+ * @returns 
+ */
+
 const BarChartBody = ({ datas }) => {
   const [BodyFollow, setBodyFollow] = useState([]);
 
@@ -73,6 +79,7 @@ const BarChartBody = ({ datas }) => {
     </div>
   );
 };
+
 
 BarChartBody.propTypes = {
   datas: PropTypes.shape({

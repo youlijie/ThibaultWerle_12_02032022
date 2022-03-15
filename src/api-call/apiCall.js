@@ -2,6 +2,11 @@ import axios from 'axios';
 
 export let newUserData = {}
 
+/**
+ * 
+ * @param {*} userid 
+ */
+
 export const apiCall = async (userid) => {
     await axios.get(`http://localhost:3000/user/${userid}`)
         .then(function (response) {

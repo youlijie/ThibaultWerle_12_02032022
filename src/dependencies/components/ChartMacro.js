@@ -5,6 +5,12 @@ import cheeseburger from "../assets/diet-icon/cheeseburger.png";
 import chicken from "../assets/diet-icon/chicken.png";
 import fire from "../assets/diet-icon/fire.png";
 
+/**
+ * 
+ * @param {*} param0 
+ * @returns 
+ */
+
 const ChartMacro = ({ datas }) => {
   const [Macro, setMacro] = useState([]);
 
