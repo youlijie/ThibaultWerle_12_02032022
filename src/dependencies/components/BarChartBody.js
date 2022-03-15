@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import React, { useEffect, useState } from "react";
 import {
   BarChart,
@@ -41,7 +42,7 @@ const BarChartBody = ({ datas }) => {
       };
 
   return (
-    <div className="barChart">
+    <div className="bar">
         <h2>Activité quotidienne</h2>
         <div className="barChartUnits">
             <span className="kg"><div></div><p>Poids (kg)</p></span>
@@ -72,5 +73,16 @@ const BarChartBody = ({ datas }) => {
     </div>
   );
 };
+
+BarChartBody.propTypes = {
+  datas: PropTypes.shape({
+    activity: PropTypes.shape({
+      sessions: PropTypes.any,
+        day: PropTypes.string,
+        kilogram: PropTypes.number,
+        calories: PropTypes.number,
+    })
+  })
+}
 
 export default BarChartBody;

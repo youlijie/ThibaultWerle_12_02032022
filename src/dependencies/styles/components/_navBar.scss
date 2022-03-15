@@ -1,0 +1,37 @@
+.navbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(2, 2, 3, 1);
+    height: 91px;
+
+    .container {
+        margin-right: 87px;
+       a {
+        color: white;
+        font-weight: 500;
+        font-size: 24px;
+        margin-left: 300px;
+        text-decoration: none;
+    } 
+    }
+
+    
+}
+
+@media (max-width: 1650px) {
+
+    .navbar {
+        
+        .container {
+            margin-right: 30%;
+
+            a {
+                margin-left: 20%;
+            }
+        }
+    }
+    
+}

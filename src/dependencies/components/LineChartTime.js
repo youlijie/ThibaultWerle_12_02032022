@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import React, { useEffect, useRef, useState } from "react";
 import { Line, LineChart, Tooltip, XAxis, YAxis } from "recharts";
 
@@ -77,7 +78,7 @@ const LineChartTime = ({ datas }) => {
           tickLine={false}
           axisLine={false}
           tick={{ fontSize: 12 }}
-          padding={{ left: 5, right: 6 }}
+          padding={{ left: 11, right: 9 }}
         />
         <YAxis hide={true} type="number" domain={["dataMin - 10", "dataMax + 40"]} />
         <Tooltip cursor={false} content={<CustomTooltip />} />
@@ -95,5 +96,15 @@ const LineChartTime = ({ datas }) => {
     </div>
   );
 };
+
+LineChartTime.propTypes = {
+  datas: PropTypes.shape({
+    session: PropTypes.shape({
+      sessions: PropTypes.any,
+      weekDays: PropTypes.string,
+      sessionLength: PropTypes.number
+    })
+  })
+}
 
 export default LineChartTime;

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import React, { useEffect, useState } from "react";
 import { Pie, PieChart } from "recharts";
 
@@ -27,7 +28,7 @@ const RadialProgress = ({ datas }) => {
             { value: todayScore, fill: "red" },
             { value: 100 - todayScore, fill: "white" },
           ]}
-          cx={75}
+          cx={120}
           cy={110}
           labelLine={false}
           label={false}
@@ -44,4 +45,12 @@ const RadialProgress = ({ datas }) => {
     </div>
   );
 };
+
+RadialProgress.propTypes = {
+  datas: PropTypes.shape({
+    user: PropTypes.shape({
+      todayScore: PropTypes.number
+    })
+  })
+}
 export default RadialProgress;

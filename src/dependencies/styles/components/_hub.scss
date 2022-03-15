@@ -1,0 +1,45 @@
+.graph {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 250px 1fr 1fr; 
+    grid-template-areas: 
+        "welcome welcome welcome welcome"
+        "bar bar bar macro"
+        "line radar score macro"; 
+    margin-left: 230px;
+
+    @media (max-width: 1300px) {
+        grid-template-rows: 250px 1fr 1fr 1fr;
+        grid-template-areas : 
+            "welcome welcome welcome welcome"
+            "bar bar bar bar"
+            "line radar score score"
+            "macro macro macro macro";
+        gap: 10px;    
+        margin-left: 150px;
+    }
+
+    .welcome {
+        grid-area: welcome;
+    }
+
+    .bar { 
+        grid-area: bar;
+    }
+
+    .macro { 
+        grid-area: macro; 
+    }
+
+    .linechartcontainer { 
+        grid-area: line; 
+    }
+
+    .radar { 
+        grid-area: radar; 
+    }
+
+    .radialprogress { 
+        grid-area: score; 
+    }
+}

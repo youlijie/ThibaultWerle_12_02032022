@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import React, { useEffect, useState } from "react";
 import {
   PolarAngleAxis,
@@ -28,7 +29,7 @@ const RadarChartPerf = ({ datas }) => {
   });
 
   return (
-    <div>
+    <div className="radar">
       <RadarChart
         cx="50%" cy="50%" outerRadius="65%"  width={258} height={263} data={data} className="radarChart"
       >
@@ -41,5 +42,15 @@ const RadarChartPerf = ({ datas }) => {
     </div>
   );
 };
+
+RadarChartPerf.propTypes = {
+  datas: PropTypes.shape({
+    performance: PropTypes.shape({
+      data: PropTypes.any,
+      value: PropTypes.number,
+      kind: PropTypes.object,
+    })
+  })
+}
 
 export default RadarChartPerf;
