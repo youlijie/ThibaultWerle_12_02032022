@@ -11,9 +11,15 @@ const kinds = [
     "Cardio" , "Energie" , "Endurance" , "Force" , "Vitesse" , "Intensité"
 ];
 
+/**
+ * 
+ * @param {*} param0
+ */
+
 const RadarChartPerf = ({ datas }) => {
   const [sessionData, setSessionData] = useState([]);
 
+  // Get data from props
   useEffect(() => {
     if (datas.performance?.data) {
       setSessionData(datas.performance?.data);

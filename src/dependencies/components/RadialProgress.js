@@ -2,10 +2,16 @@ import PropTypes from "prop-types"
 import React, { useEffect, useState } from "react";
 import { Pie, PieChart } from "recharts";
 
+/**
+ * 
+ * @param {*} param0
+ */
+
 const RadialProgress = ({ datas }) => {
   // Radial progress (1 circle) of todayScore(pourcentage) from rechart library
   const [todayScore, setTodayScore] = useState(0);
 
+  // Get data from props
   useEffect(() => {
     if (datas.user?.todayScore) {
       setTodayScore(datas.user?.todayScore * 100);
@@ -32,7 +38,7 @@ const RadialProgress = ({ datas }) => {
           cy={110}
           labelLine={false}
           label={false}
-          startAngle={60}
+          startAngle={90}
           endAngle={360}
           innerRadius={70}
           outerRadius={80}

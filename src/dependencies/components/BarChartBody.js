@@ -12,12 +12,13 @@ import {
 /**
  * 
  * @param {*} param0 
- * @returns 
+ * @public
  */
 
 const BarChartBody = ({ datas }) => {
   const [BodyFollow, setBodyFollow] = useState([]);
 
+  // Get data from props
   useEffect(() => {
     if (datas.activity?.sessions) {
       setBodyFollow(datas.activity?.sessions);
@@ -35,6 +36,7 @@ const BarChartBody = ({ datas }) => {
         };
     });
 
+    // Function to do the tooltip like in the example
     const CustomTooltip = ({ active, payload }) => {
         if (active && payload && payload.length) {
           return (
@@ -45,6 +47,11 @@ const BarChartBody = ({ datas }) => {
           );
         }
         return null;
+      };
+
+      CustomTooltip.propTypes = {
+        active: PropTypes.bool,
+        payload: PropTypes.array,
       };
 
   return (

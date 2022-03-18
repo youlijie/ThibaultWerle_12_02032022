@@ -1,6 +1,11 @@
 import PropTypes from "prop-types"
 import React from 'react';
 
+/**
+ * 
+ * @param {*} param0
+ */
+
 const Welcome = ({datas}) => {
 
     return (

@@ -1,6 +1,11 @@
 import React from 'react';
 import logo from '../assets/logo/logo.png';
 
+/**
+ * 
+ * @param {*} param0 
+ */
+
 const LogoChange = ({userId, setUserId}) => {
 
     // on image click, change userid from 12 to 18 and refresh data

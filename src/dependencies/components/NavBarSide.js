@@ -4,6 +4,11 @@ import swim from '../assets/nav-icon/swim.png';
 import cycle from '../assets/nav-icon/cycle.png';
 import strength from '../assets/nav-icon/strength.png';
 
+/**
+ * 
+ * 
+ */
+
 const NavBarSide = () => {
     return (
         <div className='navbarside'>

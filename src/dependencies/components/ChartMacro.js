@@ -8,12 +8,12 @@ import fire from "../assets/diet-icon/fire.png";
 /**
  * 
  * @param {*} param0 
- * @returns 
  */
 
 const ChartMacro = ({ datas }) => {
   const [Macro, setMacro] = useState([]);
 
+  // Get data from props
   useEffect(() => {
     if (datas.user?.keyData) {
       setMacro(datas.user?.keyData);
