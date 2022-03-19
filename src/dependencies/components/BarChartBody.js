@@ -13,6 +13,7 @@ import {
  * 
  * @param {*} param0 
  * @public
+ * @returns {JSX}
  */
 
 const BarChartBody = ({ datas }) => {

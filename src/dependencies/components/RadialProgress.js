@@ -4,8 +4,11 @@ import { Pie, PieChart } from "recharts";
 
 /**
  * 
- * @param {*} param0
+ * @param {*} param0 
+ * @public
+ * @returns {JSX}
  */
+
 
 const RadialProgress = ({ datas }) => {
   // Radial progress (1 circle) of todayScore(pourcentage) from rechart library

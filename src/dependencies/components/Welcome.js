@@ -3,8 +3,11 @@ import React from 'react';
 
 /**
  * 
- * @param {*} param0
+ * @param {*} param0 
+ * @public
+ * @returns {JSX}
  */
+
 
 const Welcome = ({datas}) => {
 

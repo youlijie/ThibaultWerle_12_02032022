@@ -13,8 +13,11 @@ const kinds = [
 
 /**
  * 
- * @param {*} param0
+ * @param {*} param0 
+ * @public
+ * @returns {JSX}
  */
+
 
 const RadarChartPerf = ({ datas }) => {
   const [sessionData, setSessionData] = useState([]);

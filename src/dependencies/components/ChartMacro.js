@@ -8,6 +8,8 @@ import fire from "../assets/diet-icon/fire.png";
 /**
  * 
  * @param {*} param0 
+ * @public
+ * @returns {JSX}
  */
 
 const ChartMacro = ({ datas }) => {

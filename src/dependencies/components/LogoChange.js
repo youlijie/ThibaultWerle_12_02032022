@@ -4,6 +4,8 @@ import logo from '../assets/logo/logo.png';
 /**
  * 
  * @param {*} param0 
+ * @public
+ * @returns {JSX}
  */
 
 const LogoChange = ({userId, setUserId}) => {

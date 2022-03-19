@@ -6,7 +6,9 @@ import strength from '../assets/nav-icon/strength.png';
 
 /**
  * 
- * 
+ * @param {*} param0 
+ * @public
+ * @returns {JSX}
  */
 
 const NavBarSide = () => {

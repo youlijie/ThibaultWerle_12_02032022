@@ -6,7 +6,9 @@ const weekDays = ["L", "M", "M", "J", "V", "S", "D"];
 
 /**
  * 
- * @param {*} param0
+ * @param {*} param0 
+ * @public
+ * @returns {JSX}
  */
 
 const LineChartTime = ({ datas }) => {

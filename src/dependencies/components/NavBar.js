@@ -2,7 +2,9 @@ import React from 'react';
 
 /**
  * 
- * 
+ * @param {*} param0 
+ * @public
+ * @returns {JSX}
  */
 
 const NavBar = () => {
