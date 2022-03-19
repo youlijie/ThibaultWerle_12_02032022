@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 import React from 'react';
 
 /**
- * 
+ * Welcome
  * @param {*} param0 
  * @public
  * @returns {JSX}
@@ -20,6 +20,9 @@ const Welcome = ({datas}) => {
 };
 
 Welcome.propTypes = {
+  /** 
+   * Import datas from props
+   */
   datas: PropTypes.shape({
     user: PropTypes.shape({
       userInfos: PropTypes.shape({
