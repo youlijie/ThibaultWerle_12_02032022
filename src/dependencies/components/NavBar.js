@@ -1,8 +1,13 @@
 import React from 'react';
 
 /**
- * 
- * @param {*} param0 
+ * NavBar
+ * @component
+ * @example
+ * return (
+ *   <NavBar/>
+ * )
+ * @returns {React.Component}
  * @public
  * @returns {JSX}
  */

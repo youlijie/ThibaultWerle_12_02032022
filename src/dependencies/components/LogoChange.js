@@ -2,10 +2,18 @@ import React from 'react';
 import logo from '../assets/logo/logo.png';
 
 /**
- * 
- * @param {*} param0 
+ * LogoChange
+ * @component
+ * @example
+ * return (
+ * <LogoChange/>
+ * )
+ * @returns {React.Component}
  * @public
  * @returns {JSX}
+ * @param {string} userId
+ * @param {function} setUserId
+ * @param {function} handleClick
  */
 
 const LogoChange = ({userId, setUserId}) => {

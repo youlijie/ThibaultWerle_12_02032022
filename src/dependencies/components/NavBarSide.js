@@ -5,8 +5,13 @@ import cycle from '../assets/nav-icon/cycle.png';
 import strength from '../assets/nav-icon/strength.png';
 
 /**
- * 
- * @param {*} param0 
+ * NavBarSide
+ * @component
+ * @example
+ * return (
+ *  <NavBarSide/>
+ * )
+ * @returns {React.Component}
  * @public
  * @returns {JSX}
  */

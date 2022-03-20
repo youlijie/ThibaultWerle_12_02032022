@@ -6,8 +6,18 @@ import chicken from "../assets/diet-icon/chicken.png";
 import fire from "../assets/diet-icon/fire.png";
 
 /**
- * 
- * @param {*} param0 
+ * ChartMacro
+ * @component
+ * @example
+ * return (
+ * <ChartMacro datas={this.state}/>
+ * )
+ * @param {object} datas
+ * @param {string} datas.user.keyData.calorieCount
+ * @param {string} datas.user.keyData.proteinCount
+ * @param {string} datas.user.keyData.carbohydrateCount
+ * @param {string} datas.user.keyData.lipidCount
+ * @returns {React.Component}
  * @public
  * @returns {JSX}
  */

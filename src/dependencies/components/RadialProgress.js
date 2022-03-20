@@ -3,10 +3,17 @@ import React, { useEffect, useState } from "react";
 import { Pie, PieChart } from "recharts";
 
 /**
- * 
- * @param {*} param0 
+ * RadialProgress
+ * @component
+ * @example
+ * return (
+ *  <RadialProgress/>
+ * )
+ * @returns {React.Component}
  * @public
  * @returns {JSX}
+ * @param {object} datas
+ * @param {number} datas.user.todayScore
  */
 
 

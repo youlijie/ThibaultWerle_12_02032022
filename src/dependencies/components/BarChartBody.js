@@ -10,8 +10,15 @@ import {
 } from "recharts";
 
 /**
- * 
- * @param {*} param0 
+ * BarChartBody
+ * @component
+ * @example
+ * return (
+ *   <BarChartBody datas={this.state}/>
+ * )
+ * @param {object} datas
+ * @param {string} datas.activity.sessions
+ * @returns {React.Component}
  * @public
  * @returns {JSX}
  */

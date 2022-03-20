@@ -3,7 +3,14 @@ import React from 'react';
 
 /**
  * Welcome
- * @param {*} param0 
+ * @component
+ * @example
+ * return (
+ *    <Welcome datas={this.state}/>
+ * )
+ * @param {object} datas
+ * @param {string} datas.user.userInfos.firstName
+ * @returns {React.Component}
  * @public
  * @returns {JSX}
  */

@@ -12,8 +12,13 @@ const kinds = [
 ];
 
 /**
- * 
- * @param {*} param0 
+ * RadarChartPerf
+ * @component
+ * @example
+ * return (
+ *   <RadarChartPerf datas={this.state}/>
+ * )
+ * @param {object} datas
  * @public
  * @returns {JSX}
  */

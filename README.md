@@ -50,6 +50,4 @@ Build an athletic user profile page in React, fetching data from a NodeJS server
 
 ### start jsDocs :
 
-  1 . To start server use ``` npx styleguidist server ``` (the documentaion server start at port:6060)
-  
-  2. In your Browser go to : http://localhost:6060/
+  1 . To open the doc, launch ``` docs/index.html ```
