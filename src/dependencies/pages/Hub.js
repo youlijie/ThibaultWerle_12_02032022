@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { apiCall, newUserData } from '../../api-call/apiCall';
+import { USER_ACTIVITY, USER_AVERAGE_SESSIONS, USER_MAIN_DATA, USER_PERFORMANCE } from '../../api-call/data';
 import BarChartBody from '../components/BarChartBody';
 import ChartMacro from '../components/ChartMacro';
 import LineChartTime from '../components/LineChartTime';
@@ -13,17 +14,21 @@ import Welcome from '../components/Welcome';
 const Hub = () => {
     const [datas, setDatas] = useState({});
     const [userId, setUserId] = useState('12');
+    const newUserDataMock = { user : USER_MAIN_DATA, activity: USER_ACTIVITY, session: USER_AVERAGE_SESSIONS, performance: USER_PERFORMANCE }; 
 
     useEffect(() => {
-        async function fetchData() {
-            await apiCall(userId);
-            setDatas(() => ({...newUserData}) );
-            console.log(newUserData, 'userData2');
+        //use mock data if apicall is not working
+        apiCall(userId).then(() => {
+            setDatas(...newUserData);
         }
-        fetchData();
+        ).catch(() => {
+            setDatas(...newUserDataMock);
+        }
+        );
         
     }, [userId]);
 
+    
     
 
     return (

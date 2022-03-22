@@ -100,5 +100,10 @@
 @media (max-width: 1300px) {
     .macro {
         flex-direction: row;
+        width: 80%;
+        
+        .macrocontainer {
+            width: 200px;
+        }
     }
 }
