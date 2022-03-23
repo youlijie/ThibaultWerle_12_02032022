@@ -17,14 +17,17 @@ const Hub = () => {
     const newUserDataMock = { user : USER_MAIN_DATA, activity: USER_ACTIVITY, session: USER_AVERAGE_SESSIONS, performance: USER_PERFORMANCE }; 
 
     useEffect(() => {
-        //use mock data if apicall is not working
-        apiCall(userId).then(() => {
-            setDatas(...newUserData);
+        async function fetchData() {
+            await apiCall(userId);
+            console.log(newUserData , 'newUserData');
+            if (!newUserData.user) {
+                console.log(newUserDataMock , 'newUserData2');
+                setDatas(() => ({...newUserDataMock}))
+            } else {
+                setDatas(() => ({...newUserData}))
+            }
         }
-        ).catch(() => {
-            setDatas(...newUserDataMock);
-        }
-        );
+        fetchData();
         
     }, [userId]);
 
