@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/youlijie/ThibaultWerle_12_02032022/static/css/main.72c6409d.css",
-    "main.js": "/youlijie/ThibaultWerle_12_02032022/static/js/main.c4d7ea12.js",
-    "static/media/logo.png": "/youlijie/ThibaultWerle_12_02032022/static/media/logo.231a6da56bd8a5133afa.png",
-    "index.html": "/youlijie/ThibaultWerle_12_02032022/index.html",
-    "main.72c6409d.css.map": "/youlijie/ThibaultWerle_12_02032022/static/css/main.72c6409d.css.map",
-    "main.c4d7ea12.js.map": "/youlijie/ThibaultWerle_12_02032022/static/js/main.c4d7ea12.js.map"
+    "main.css": "/ThibaultWerle_12_02032022/static/css/main.72c6409d.css",
+    "main.js": "/ThibaultWerle_12_02032022/static/js/main.5dbf499b.js",
+    "static/media/logo.png": "/ThibaultWerle_12_02032022/static/media/logo.231a6da56bd8a5133afa.png",
+    "index.html": "/ThibaultWerle_12_02032022/index.html",
+    "main.72c6409d.css.map": "/ThibaultWerle_12_02032022/static/css/main.72c6409d.css.map",
+    "main.5dbf499b.js.map": "/ThibaultWerle_12_02032022/static/js/main.5dbf499b.js.map"
   },
   "entrypoints": [
     "static/css/main.72c6409d.css",
-    "static/js/main.c4d7ea12.js"
+    "static/js/main.5dbf499b.js"
   ]
 }
