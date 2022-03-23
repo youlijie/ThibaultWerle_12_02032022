@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ThibaultWerle_12_02032022/static/css/main.72c6409d.css",
-    "main.js": "/ThibaultWerle_12_02032022/static/js/main.5dbf499b.js",
+    "main.js": "/ThibaultWerle_12_02032022/static/js/main.eb439e80.js",
     "static/media/logo.png": "/ThibaultWerle_12_02032022/static/media/logo.231a6da56bd8a5133afa.png",
     "index.html": "/ThibaultWerle_12_02032022/index.html",
     "main.72c6409d.css.map": "/ThibaultWerle_12_02032022/static/css/main.72c6409d.css.map",
-    "main.5dbf499b.js.map": "/ThibaultWerle_12_02032022/static/js/main.5dbf499b.js.map"
+    "main.eb439e80.js.map": "/ThibaultWerle_12_02032022/static/js/main.eb439e80.js.map"
   },
   "entrypoints": [
     "static/css/main.72c6409d.css",
-    "static/js/main.5dbf499b.js"
+    "static/js/main.eb439e80.js"
   ]
 }
