@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/youlijie/ThibaultWerle_12_02032022/static/css/main.72c6409d.css",
+    "main.js": "/youlijie/ThibaultWerle_12_02032022/static/js/main.c4d7ea12.js",
+    "static/media/logo.png": "/youlijie/ThibaultWerle_12_02032022/static/media/logo.231a6da56bd8a5133afa.png",
+    "index.html": "/youlijie/ThibaultWerle_12_02032022/index.html",
+    "main.72c6409d.css.map": "/youlijie/ThibaultWerle_12_02032022/static/css/main.72c6409d.css.map",
+    "main.c4d7ea12.js.map": "/youlijie/ThibaultWerle_12_02032022/static/js/main.c4d7ea12.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72c6409d.css",
+    "static/js/main.c4d7ea12.js"
+  ]
+}
